@@ -4,3 +4,6 @@ Android Studio (Java) - Android Application
 Firebase, Real-Time Database
 Postman
 Arduino Uno, nRF24L01 , SIM800C
+
+
+https://youtu.be/l-kea-qjcac
