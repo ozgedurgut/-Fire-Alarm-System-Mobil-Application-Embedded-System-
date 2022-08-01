@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+
+
+    //Android uygulamalarında ekran tasarımları res klasörü altında bulunan
+    //layout dosyaları ile belirlenir. Bu dosyalar xml formatında hazırlanan dosyalardır
+    //ve Android uygulamalarına özel etiketler kullanarak görsel öğelerin yerleşimlerini
+    //ve özelliklerini bildirirler.
+
+
+    //EditText
+    //Kullanıcıdan alınacak metin ya da numara gibi girdileri kaynak kod tarafına iletmek için kullanılır.
+    //HTML’deki input benzeri bir davranış gösterir. Kullanıcı giriş yaparken gireceği değere göre klavye tipi seçilebilir.
+    <EditText
+        android:id="@+id/edt_Name"
+        android:layout_width="329dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/edit_text_border"
+        android:ems="10"
+        android:hint="   İsim"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edt_phoneNo"
+        android:layout_width="328dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/edit_text_border"
+        android:ems="10"
+        android:hint="   Telefon No"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edt_who"
+        android:layout_width="328dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/edit_text_border"
+        android:ems="10"
+        android:hint="   Yakınlığı"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/ekleBtn"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="10dp"
+
+        android:background="@drawable/gradient"
+        android:backgroundTint="#46F6AA"
+        android:text="Kaydet" />
+
+    <ListView
+        android:id="@+id/listViewCanli"
+        android:layout_width="358dp"
+        android:layout_height="327dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="10dp" />
+
+</LinearLayout>
